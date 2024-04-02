@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DimigoBetween</title>
+    <!-- Google Font 로딩 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- rubik 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+    <!-- anton 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+    <!-- fredoka 폰트 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Fredoka:wght@300..700&family=Rubik+Scribble&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --main-color: #5755FE;
+        }
+
+        .highlight {
+            color: var(--main-color);
+        }
+
+        header {
+            /* top: 10px; */
+            text-align: center;
+            height: 200px;
+            line-height: 100px;
+        }
+
+        .maintitle {
+            font-size: 64px;
+            font-family: "Fredoka", sans-serif;
+            font-weight: 500;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 10;
+            color: var(--main-color);
+        }
+
+        .subtitle {
+            font-size: 18px;
+            font-family: "Fredoka", sans-serif;
+            font-weight: 500;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 10;
+        }
+
+        #version {
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 300px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 200px;
+        }
+
+        /*이중선 제거*/
+        th,
+        td {
+            border-collapse: collapse;
+            width: 50%;
+            height: 50px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        main>div {
+            width: 100%;
+            min-width: 100px;
+        }
+
+        #timetable>tr.now {
+            background-color: #FF71CD;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="subtitle">그래그래 우리는 개쩌는 <span class="highlight">해방</span> 이다</div>
+        <div class="maintitle">DimigoBetween <span id="version">v.001</span></div>
+    </header>
+    <main>
+        <div>
+            <h2 class="highlight">시간표</h2>
+            <table id="timetable">
+            </table>
+            <table id="timetable2">
+            </table>
+        </div>
+        <div>
+            <h2 class="highlight">일정</h2>
+        </div>
+        <div>
+            <h2 class="highlight">일정</h2>
+        </div>
+    </main>
+</body>
+
+</html>
+<script src="/js/time.js"></script>
+<script src="/js/index.js"></script>
